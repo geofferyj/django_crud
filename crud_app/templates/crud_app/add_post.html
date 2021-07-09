@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Add Post{% endblock title %}
+{% block content %}
+
+
+<div class="col-lg-12 blog-post">
+<form action="" method="post">
+    {{form.as_p}}
+    {% csrf_token %}
+    <button type="submit" class="btn btn-secondary">Add Post</button>
+</form>
+
+
+</div>
+
+{% endblock  %}

@@ -1,0 +1,36 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title%} Home {% endblock title%} 
+{% block content %} 
+
+{% for post in posts %}
+
+<article class="post infinite-item">
+  <div class="inner">
+    <header class="post-header">
+      <h2 class="post-title">
+        <a href="{% url 'get_post' post.id %}">{{ post.post_title }}</a>
+      </h2>
+
+      <span class="post-meta">
+        @{{ post.post_author }} | {{ post.date_created | date:"M j, Y" }}
+      </span>
+
+      <div class="clear"></div>
+    </header>
+
+    <section class="post-excerpt">
+      <p>{{ post.post_content | safe}}</p>
+    </section>
+  </div>
+
+  {% if post.post_author == user %}
+  <a href="{% url 'delete_post' post.id%}" role="button" class="btn btn-danger">Delete</a>
+  <a class="btn btn-success" href="{% url 'update_post' post.id %}" role="button">Update</a>
+  {% endif %}
+  
+</article>
+
+{% endfor %} 
+
+{% endblock %}
