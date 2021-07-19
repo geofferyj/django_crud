@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crud_app',
+    'link_checker', # <-- Added this line
 ]
 
 MIDDLEWARE = [

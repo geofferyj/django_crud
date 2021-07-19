@@ -1,0 +1,837 @@
+2021-07-19 05:24:08 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: link_scraper)
+2021-07-19 05:24:08 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.8.3 (default, Jul  2 2020, 16:21:59) - [GCC 7.3.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Linux-4.15.0-147-generic-x86_64-with-glibc2.10
+2021-07-19 05:24:08 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2021-07-19 05:24:08 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'link_scraper',
+ 'LOG_FILE': 'logs/default/link_spider/89521b1ee85111eb8f14ad6133ae0891.log',
+ 'NEWSPIDER_MODULE': 'link_scraper.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['link_scraper.spiders']}
+2021-07-19 05:24:08 [scrapy.extensions.telnet] INFO: Telnet Password: f63767656802ebf3
+2021-07-19 05:24:08 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-07-19 05:24:08 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-07-19 05:24:08 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-07-19 05:24:08 [scrapy.middleware] INFO: Enabled item pipelines:
+['link_scraper.pipelines.LinkScraperPipeline']
+2021-07-19 05:24:08 [scrapy.core.engine] INFO: Spider opened
+2021-07-19 05:24:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-07-19 05:24:08 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-07-19 05:24:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.limetorrents.pro/robots.txt> (referer: None)
+2021-07-19 05:24:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.limetorrents.pro/home/> (referer: None)
+2021-07-19 05:24:17 [py.warnings] WARNING: /home/geofferyj/Documents/web_developement/django/django_crud/link_scraper/spiders/link_spider.py:28: ScrapyDeprecationWarning: scrapy.loader.processors.TakeFirst is deprecated, instantiate itemloaders.processors.TakeFirst instead.
+  loader.default_output_processor = TakeFirst()
+
+2021-07-19 05:24:17 [py.warnings] WARNING: /home/geofferyj/Documents/web_developement/django/django_crud/link_scraper/spiders/link_spider.py:30: ScrapyDeprecationWarning: scrapy.loader.processors.TakeFirst is deprecated, instantiate itemloaders.processors.TakeFirst instead.
+  loader.add_css('url', 'a::attr(href)', TakeFirst(), response.urljoin)
+
+2021-07-19 05:24:17 [asyncio] DEBUG: Using selector: EpollSelector
+2021-07-19 05:24:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/home/'}
+2021-07-19 05:24:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Create an account', 'url': 'https://www.limetorrents.pro/register/'}
+2021-07-19 05:24:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Forgot your password?',
+ 'url': 'https://www.limetorrents.pro/recover/'}
+2021-07-19 05:24:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/'}
+2021-07-19 05:24:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/browse-torrents/'}
+2021-07-19 05:24:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/top100'}
+2021-07-19 05:24:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/latest100'}
+2021-07-19 05:24:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/search-cloud/'}
+2021-07-19 05:24:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/register/'}
+2021-07-19 05:24:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/faq/'}
+2021-07-19 05:24:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/rss/'}
+2021-07-19 05:24:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/contact/'}
+2021-07-19 05:24:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'My Friends', 'url': 'https://www.limetorrents.pro/friends/'}
+2021-07-19 05:24:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Messages', 'url': 'https://www.limetorrents.pro/messages/'}
+2021-07-19 05:24:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Feedback', 'url': 'https://www.limetorrents.pro/feedback/'}
+2021-07-19 05:24:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Upload a torrent', 'url': 'https://www.limetorrents.pro/upload/'}
+2021-07-19 05:24:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Bookmarks', 'url': 'https://www.limetorrents.pro/bookmarks/'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Personal RSS Feed',
+ 'url': 'https://www.limetorrents.pro/personal-rss/'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'My Profile', 'url': 'https://www.limetorrents.pro/profile/'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Movies torrents',
+ 'url': 'https://www.limetorrents.pro/browse-torrents/Movies/'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Monthly TOP 100 torrents',
+ 'url': 'https://www.limetorrents.pro/cat_top/16/Movies/'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/rss/16/'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/EEAD43E6FBCFFC02FAC5FDBB724586882FA18C3B.torrent?title=The-Hitmans-Wifes-Bodyguard-(2021)-(1080p)-[WEBRip]-[5-1]-[YTS-MX]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'The Hitmans Wifes Bodyguard (2021) (1080p) [WEBRip] [5 1] [YTS MX]',
+ 'url': 'https://www.limetorrents.pro/The-Hitmans-Wifes-Bodyguard-(2021)-(1080p)-[WEBRip]-[5-1]-[YTS-MX]-torrent-16387292.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/B9F89CFDF8E74E9ACE0E58528932FCC437AD0D0E.torrent?title=Space-Jam-A-New-Legacy-(2021)-(1080p)-[WEBRip]-[5-1]-[YTS-MX]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Space Jam A New Legacy (2021) (1080p) [WEBRip] [5 1] [YTS MX]',
+ 'url': 'https://www.limetorrents.pro/Space-Jam-A-New-Legacy-(2021)-(1080p)-[WEBRip]-[5-1]-[YTS-MX]-torrent-16384297.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/970777CAF2320055213DEABE3EA5394D5AAAAA2A.torrent?title=The-Hitmans-Wifes-Bodyguard-(2021)-[720p]-[WEBRip]-[YTS-MX]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'The Hitmans Wifes Bodyguard (2021) [720p] [WEBRip] [YTS MX]',
+ 'url': 'https://www.limetorrents.pro/The-Hitmans-Wifes-Bodyguard-(2021)-[720p]-[WEBRip]-[YTS-MX]-torrent-16387280.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/30D021A97CD96453D25B96D8EF13938501220CC2.torrent?title=The-Hitmans-Wifes-Bodyguard-2021-EXTENDED-1080p-WEBRip-DD5-1-x264'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'The Hitmans Wifes Bodyguard 2021 EXTENDED 1080p WEBRip DD5 1 x264',
+ 'url': 'https://www.limetorrents.pro/The-Hitmans-Wifes-Bodyguard-2021-EXTENDED-1080p-WEBRip-DD5-1-x264-torrent-16386723.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/F4237BDCBD331110B043F3BBC00FCD413D3C12C3.torrent?title=The-Forever-Purge-(2021)-(1080p)-[WEBRip]-[5-1]-[YTS-MX]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'The Forever Purge (2021) (1080p) [WEBRip] [5 1] [YTS MX]',
+ 'url': 'https://www.limetorrents.pro/The-Forever-Purge-(2021)-(1080p)-[WEBRip]-[5-1]-[YTS-MX]-torrent-16385706.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/CF0FD67638FEF5D24128A4A44EA7823C7878D9E1.torrent?title=Space-Jam-A-New-Legacy-(2021)-[720p]-[WEBRip]-[YTS-MX]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Space Jam A New Legacy (2021) [720p] [WEBRip] [YTS MX]',
+ 'url': 'https://www.limetorrents.pro/Space-Jam-A-New-Legacy-(2021)-[720p]-[WEBRip]-[YTS-MX]-torrent-16384318.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/E025261502E4E560082015464400A3ABE0D63726.torrent?title=Midnight-In-The-Switchgrass-(2021)-[720p]-[BluRay]-[YTS-MX]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Midnight In The Switchgrass (2021) [720p] [BluRay] [YTS MX]',
+ 'url': 'https://www.limetorrents.pro/Midnight-In-The-Switchgrass-(2021)-[720p]-[BluRay]-[YTS-MX]-torrent-16385578.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/B6B3EE6CEFAE6AB58481476B74F3EECCA356E1CD.torrent?title=Midnight-In-The-Switchgrass-(2021)-(1080p)-[BluRay]-[5-1]-[YTS-MX]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Midnight In The Switchgrass (2021) (1080p) [BluRay] [5 1] [YTS MX]',
+ 'url': 'https://www.limetorrents.pro/Midnight-In-The-Switchgrass-(2021)-(1080p)-[BluRay]-[5-1]-[YTS-MX]-torrent-16385777.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/48B624E2561EED5EA74CD0618956D89276F333CD.torrent?title=Gunpowder-Milkshake-(2021)-[720p]-[WEBRip]-[YTS-MX]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Gunpowder Milkshake (2021) [720p] [WEBRip] [YTS MX]',
+ 'url': 'https://www.limetorrents.pro/Gunpowder-Milkshake-(2021)-[720p]-[WEBRip]-[YTS-MX]-torrent-16378624.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/953CABC3F410E8BCB262C5C0D8BEAC72B0644CDA.torrent?title=The-Hitmans-Wifes-Bodyguard-2021-EXTENDED-1080p-WEBRip-x264-RARBG'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'The Hitmans Wifes Bodyguard 2021 EXTENDED 1080p WEBRip x264-RARBG',
+ 'url': 'https://www.limetorrents.pro/The-Hitmans-Wifes-Bodyguard-2021-EXTENDED-1080p-WEBRip-x264-RARBG-torrent-16386927.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/B2650500CBA027CF9B134989BAF4375DEB52B547.torrent?title=Black-Widow-2021-WEBRip-XviD-MP3-XVID'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Black Widow 2021 WEBRip XviD MP3-XVID',
+ 'url': 'https://www.limetorrents.pro/Black-Widow-2021-WEBRip-XviD-MP3-XVID-torrent-16383775.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/47723EA61AE6902A3147B56A0DA87CCB7491DBE6.torrent?title=Space-Jam-a-New-Legacy-2021-1080p-WEBRip-x264-RARBG'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Space Jam a New Legacy 2021 1080p WEBRip x264-RARBG',
+ 'url': 'https://www.limetorrents.pro/Space-Jam-a-New-Legacy-2021-1080p-WEBRip-x264-RARBG-torrent-16383525.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/2193E38F2B6075D602093007E5325CD5E8D84A6C.torrent?title=Space-Jam-a-New-Legacy-2021-1080p-HMAX-WEB-DL-DDP5-1-Atmos-x264-CM'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Space Jam a New Legacy 2021 1080p HMAX WEB-DL DDP5 1 Atmos x264-CM',
+ 'url': 'https://www.limetorrents.pro/Space-Jam-a-New-Legacy-2021-1080p-HMAX-WEB-DL-DDP5-1-Atmos-x264-CM-torrent-16383451.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/E7E52671949D30BC02B267E28B4C9703C1824AA8.torrent?title=The-Forever-Purge-(2021)-[720p]-[WEBRip]-[YTS-MX]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'The Forever Purge (2021) [720p] [WEBRip] [YTS MX]',
+ 'url': 'https://www.limetorrents.pro/The-Forever-Purge-(2021)-[720p]-[WEBRip]-[YTS-MX]-torrent-16385572.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/E57798CAE7171BE357A4FF264B0824BDC39D18D8.torrent?title=Pig-2021-1080p-WEBRip-DD5-1-x264-CM'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Pig 2021 1080p WEBRip DD5 1 x264-CM',
+ 'url': 'https://www.limetorrents.pro/Pig-2021-1080p-WEBRip-DD5-1-x264-CM-torrent-16385625.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'TV Shows torrents',
+ 'url': 'https://www.limetorrents.pro/browse-torrents/TV-shows/'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Monthly TOP 100 torrents',
+ 'url': 'https://www.limetorrents.pro/cat_top/20/TV-shows/'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/rss/20/'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/DF77ACD8AE82442CFF4909E770878D2996927F91.torrent?title=Loki-S01E06-For-All-Time-Always-1080p-DSNP-WEB-DL-DDP5-1-H-264-EVO[eztv-re]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Loki S01E06 For All Time Always 1080p DSNP WEB-DL DDP5 1 H '
+         '264-EVO[eztv re]',
+ 'url': 'https://www.limetorrents.pro/Loki-S01E06-For-All-Time-Always-1080p-DSNP-WEB-DL-DDP5-1-H-264-EVO[eztv-re]-torrent-16377944.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/0D95DAAC4786C11DA1E56C596321F02F61B6D629.torrent?title=Rick-and-Morty-S05E03-1080p-WEBRip-x264-CAKES[rartv]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Rick and Morty S05E03 1080p WEBRip x264-CAKES[rartv]',
+ 'url': 'https://www.limetorrents.pro/Rick-and-Morty-S05E03-1080p-WEBRip-x264-CAKES[rartv]-torrent-16382708.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/D1921DEE3E0E49B5ACE9123465AB9A887A396A30.torrent?title=Loki-S01-COMPLETE-720p-DSNP-WEBRip-x264'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Loki S01 COMPLETE 720p DSNP WEBRip x264',
+ 'url': 'https://www.limetorrents.pro/Loki-S01-COMPLETE-720p-DSNP-WEBRip-x264-torrent-16378255.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/EA418DCFCEB23568939654EDD6355C3677B1187D.torrent?title=Loki-S01E06-WEB-x264'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Loki S01E06 WEB x264',
+ 'url': 'https://www.limetorrents.pro/Loki-S01E06-WEB-x264-torrent-16378081.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/326A45386B506394C4DE776A4A26C0D17655D33D.torrent?title=rick-and-morty-s05e05-1080p-webrip-x264-cakes[eztv-re]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'rick and morty s05e05 1080p webrip x264-cakes[eztv re]',
+ 'url': 'https://www.limetorrents.pro/rick-and-morty-s05e05-1080p-webrip-x264-cakes[eztv-re]-torrent-16391900.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/89638A429A82E5A75D614095D86EEB1A1B3757FD.torrent?title=Never-Have-I-Ever-S02-COMPLETE-720p-NF-WEBRip-x264'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Never Have I Ever S02 COMPLETE 720p NF WEBRip x264',
+ 'url': 'https://www.limetorrents.pro/Never-Have-I-Ever-S02-COMPLETE-720p-NF-WEBRip-x264-torrent-16380712.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/2FC00260033C12A637D6DBA160A3D9234A8C26D7.torrent?title=Loki-S01E06-720p-WEB-x265'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Loki S01E06 720p WEB x265',
+ 'url': 'https://www.limetorrents.pro/Loki-S01E06-720p-WEB-x265-torrent-16378080.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/42DED99D11B72C20DD252C3BC487F2D4EC3D0F13.torrent?title=Loki-S01E06-720p-WEB-H264-EXPLOIT[rartv]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Loki S01E06 720p WEB H264-EXPLOIT[rartv]',
+ 'url': 'https://www.limetorrents.pro/Loki-S01E06-720p-WEB-H264-EXPLOIT[rartv]-torrent-16382019.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/599DC7F475EEEE4D003B7A66DEDD404BCD584F84.torrent?title=Loki-S01E06-For-All-Time-Always-1080p-DSNP-WEBRip-DDP5-1-x264-TOMMY[rartv]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Loki S01E06 For All Time Always 1080p DSNP WEBRip DDP5 1 '
+         'x264-TOMMY[rartv]',
+ 'url': 'https://www.limetorrents.pro/Loki-S01E06-For-All-Time-Always-1080p-DSNP-WEBRip-DDP5-1-x264-TOMMY[rartv]-torrent-16389947.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/196E24370119B8BD2DD51E446B4805C79E6528D8.torrent?title=Loki-S01E06-For-All-Time-Always-1080p-DSNP-WEB-DL-DDP5-1-H-264'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Loki S01E06 For All Time Always 1080p DSNP WEB-DL DDP5 1 H 264',
+ 'url': 'https://www.limetorrents.pro/Loki-S01E06-For-All-Time-Always-1080p-DSNP-WEB-DL-DDP5-1-H-264-torrent-16377962.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/A0C8667367612B14C27415830245E320467CB4B1.torrent?title=Star-Wars-The-Bad-Batch-S01E12-1080p-WEB-H264-EXPLOIT[eztv-re]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Star Wars The Bad Batch S01E12 1080p WEB H264-EXPLOIT[eztv re]',
+ 'url': 'https://www.limetorrents.pro/Star-Wars-The-Bad-Batch-S01E12-1080p-WEB-H264-EXPLOIT[eztv-re]-torrent-16383382.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/44567B272747061D95355D77E89AFA8E9F12F0FC.torrent?title=Loki-S01E06-720p-WEB-H264-EXPLOIT[eztv-re]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Loki S01E06 720p WEB H264-EXPLOIT[eztv re]',
+ 'url': 'https://www.limetorrents.pro/Loki-S01E06-720p-WEB-H264-EXPLOIT[eztv-re]-torrent-16378313.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/6B54D250C604F21A76EC68C21B0D383AA2C90B50.torrent?title=Dr-Death-S01-COMPLETE-720p-PCOK-WEBRip-x264'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Dr Death S01 COMPLETE 720p PCOK WEBRip x264',
+ 'url': 'https://www.limetorrents.pro/Dr-Death-S01-COMPLETE-720p-PCOK-WEBRip-x264-torrent-16382323.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/88A954DD63D7747B3BE07EB07D3288F32EE9C45F.torrent?title=Loki-S01E06-720p-x265-ZMNT[eztv-re]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Loki S01E06 720p x265-ZMNT[eztv re]',
+ 'url': 'https://www.limetorrents.pro/Loki-S01E06-720p-x265-ZMNT[eztv-re]-torrent-16379089.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/DBEABEACD75C87B50D6A7CD69242C2F854D709B9.torrent?title=Loki-S01-1080p-DSNP-WEBRip-DDP5-1-Atmos-x264'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Loki S01 1080p DSNP WEBRip DDP5 1 Atmos x264',
+ 'url': 'https://www.limetorrents.pro/Loki-S01-1080p-DSNP-WEBRip-DDP5-1-Atmos-x264-torrent-16378439.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Music torrents',
+ 'url': 'https://www.limetorrents.pro/browse-torrents/Music/'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Monthly TOP 100 torrents',
+ 'url': 'https://www.limetorrents.pro/cat_top/17/Music/'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/rss/17/'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/6E8742FBCACF064F474643EAEEC949E1E194376A.torrent?title=VA--NOW-Decades-Of-Soul-(4CD)-(2021)-Mp3-320kbps-[PMEDIA]-⭐️'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'VA - NOW Decades Of Soul (4CD) (2021) Mp3 320kbps [PMEDIA] ⭐️',
+ 'url': 'https://www.limetorrents.pro/VA--NOW-Decades-Of-Soul-(4CD)-(2021)-Mp3-320kbps-[PMEDIA]-⭐️-torrent-16387621.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/510962452ABF843857AF1F483D8FD4BE69B007EF.torrent?title=The-Official-UK-Top-100-Singles-Chart-(16-July-2021)-Mp3-320kbps-[PMEDIA]-⭐️'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'The Official UK Top 100 Singles Chart (16-July-2021) Mp3 320kbps '
+         '[PMEDIA] ⭐️',
+ 'url': 'https://www.limetorrents.pro/The-Official-UK-Top-100-Singles-Chart-(16-July-2021)-Mp3-320kbps-[PMEDIA]-⭐️-torrent-16385487.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/9BB34877549334958583CCB7CCF407960A849E1D.torrent?title=VA--First-Dance-Essentials-(2021)-Mp3-320kbps-[PMEDIA]-⭐️'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'VA - First Dance Essentials (2021) Mp3 320kbps [PMEDIA] ⭐️',
+ 'url': 'https://www.limetorrents.pro/VA--First-Dance-Essentials-(2021)-Mp3-320kbps-[PMEDIA]-⭐️-torrent-16380439.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/02508B2D988F225643C6DA9A24E7761C54604620.torrent?title=电影最常用的背景音乐-大气磅礴首首震撼人心共33首[Mp3]'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': '电影最常用的背景音乐,大气磅礴首首震撼人心共33首[Mp3]',
+ 'url': 'https://www.limetorrents.pro/电影最常用的背景音乐-大气磅礴首首震撼人心共33首[Mp3]-torrent-16387453.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/575FB9F339C718B77296F17E92DE6C23C82E1A10.torrent?title=VA--Heartland-Rock-Essentials-(2021)-Mp3-320kbps-[PMEDIA]-⭐️'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'VA - Heartland Rock Essentials (2021) Mp3 320kbps [PMEDIA] ⭐️',
+ 'url': 'https://www.limetorrents.pro/VA--Heartland-Rock-Essentials-(2021)-Mp3-320kbps-[PMEDIA]-⭐️-torrent-16380441.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/B493D30FC96625CF89C18870DF2139DE65D138F9.torrent?title=Foo-Fighters--Dee-Gees--Hail-Satin--Foo-Fighters--Live-(2021)-Mp3-320kbps-[PMEDIA]-⭐️'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Foo Fighters - Dee Gees Hail Satin - Foo Fighters Live (2021) Mp3 '
+         '320kbps [P..',
+ 'url': 'https://www.limetorrents.pro/Foo-Fighters--Dee-Gees--Hail-Satin--Foo-Fighters--Live-(2021)-Mp3-320kbps-[PMEDIA]-⭐️-torrent-16391330.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/3D2CCF8E12C342010CD20CE39023E1617895D03D.torrent?title=VA--Acoustic-Guitar-Hits-2021-(2021)-Mp3-320kbps-[PMEDIA]-⭐️'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'VA - Acoustic Guitar Hits 2021 (2021) Mp3 320kbps [PMEDIA] ⭐️',
+ 'url': 'https://www.limetorrents.pro/VA--Acoustic-Guitar-Hits-2021-(2021)-Mp3-320kbps-[PMEDIA]-⭐️-torrent-16382775.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/DD5FCC69BCADDEB013555168FE1F8D67CD0120BF.torrent?title=VA--NOW-Decades-Of-Soul-(4CD)-(2021)-FLAC-[PMEDIA]-⭐️'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'VA - NOW Decades Of Soul (4CD) (2021) FLAC [PMEDIA] ⭐️',
+ 'url': 'https://www.limetorrents.pro/VA--NOW-Decades-Of-Soul-(4CD)-(2021)-FLAC-[PMEDIA]-⭐️-torrent-16387617.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/41429DB46D36B445286FDF482C4186A6D4246423.torrent?title=Foo-Fighters--Dee-Gees--Hail-Satin-(2021)-(Vinyl-24bit-192-kHz)-FLAC-[PMEDIA]-⭐️'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Foo Fighters, Dee Gees - Hail Satin (2021) (Vinyl 24bit-192-kHz) '
+         'FLAC [PMEDIA] �..',
+ 'url': 'https://www.limetorrents.pro/Foo-Fighters--Dee-Gees--Hail-Satin-(2021)-(Vinyl-24bit-192-kHz)-FLAC-[PMEDIA]-⭐️-torrent-16391327.html'}
+2021-07-19 05:24:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/8FA28CF25975862120BF82EE00D62A46D69D4EBC.torrent?title=[210710]METAL-MAX-30周年記念『メタルマックス・サウンドトラック』完全数量限定生産[10CD][-   '}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': '[210710]METAL MAX 30周年記念『メタルマックス・サウンドトラッ..',
+ 'url': 'https://www.limetorrents.pro/[210710]METAL-MAX-30周年記念『メタルマックス・サウンドトラック』完全数量限定生産[10CD][-   '
+        '-torrent-16386946.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/5612F9987B650B7ACDFD3CF039B97F9F71208977.torrent?title=[210717]VTuberオリジナル楽曲アルバム第四弾「VirtuaREAL-03」[320K]'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': '[210717]VTuberオリジナル楽曲アルバム第四弾「VirtuaREAL 03」[320K..',
+ 'url': 'https://www.limetorrents.pro/[210717]VTuberオリジナル楽曲アルバム第四弾「VirtuaREAL-03」[320K]-torrent-16388977.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/511488F6CA0E22BC12336A91BA9538B6F58AF2CD.torrent?title=[2021-07-17]-TVアニメ「僕のヒーローアカデミア-5th-Season」OP2テーマ「Merry-Go-Round」／MAN-WITH-   '}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': '[2021 07 17] TVアニメ「僕のヒーローアカデミア 5th Season」OP2テ..',
+ 'url': 'https://www.limetorrents.pro/[2021-07-17]-TVアニメ「僕のヒーローアカデミア-5th-Season」OP2テーマ「Merry-Go-Round」／MAN-WITH-   '
+        '-torrent-16384590.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/021419EFB53940F2790EB59BE18F104E45F7B70B.torrent?title=[2021-07-14]-BanG-Dream '
+        '-アルバム3タイトル連動購入特典CD-[MP3-320K]'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': '[2021 07 14] BanG Dream! アルバム3タイトル連動購入特典CD [MP3 320K..',
+ 'url': 'https://www.limetorrents.pro/[2021-07-14]-BanG-Dream '
+        '-アルバム3タイトル連動購入特典CD-[MP3-320K]-torrent-16380753.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/B6AE8DEE8774E5D54BB772EBDC110ED6457DD9D3.torrent?title=[Hi-Res][210718]『魔法科高校の劣等生』10周年記念主题歌「命ノ証」／ASCA[48kHz／24bit][FLAC]'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': '[Hi-Res][210718]『魔法科高校の劣等生』10周年記念主题歌「命�..',
+ 'url': 'https://www.limetorrents.pro/[Hi-Res][210718]『魔法科高校の劣等生』10周年記念主题歌「命ノ証」／ASCA[48kHz／24bit][FLAC]-torrent-16388835.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/AA4344F0584BB3FA5B65F6BD54E438614F9E90B2.torrent?title=TikTok-Trending-Top-50-Singles-Chart-(16-July-2021)-Mp3-320kbps-[PMEDIA]-⭐️'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'TikTok Trending Top 50 Singles Chart (16-July-2021) Mp3 320kbps '
+         '[PMEDIA] ⭐️',
+ 'url': 'https://www.limetorrents.pro/TikTok-Trending-Top-50-Singles-Chart-(16-July-2021)-Mp3-320kbps-[PMEDIA]-⭐️-torrent-16385477.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Games torrents',
+ 'url': 'https://www.limetorrents.pro/browse-torrents/Games/'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Monthly TOP 100 torrents',
+ 'url': 'https://www.limetorrents.pro/cat_top/8/Games/'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/rss/8/'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/847262435544B53F89ECED9838912ED709F5E668.torrent?title=NieR--Automata'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'NieR - Automata',
+ 'url': 'https://www.limetorrents.pro/NieR--Automata-torrent-16385074.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/FFAB33EE4126C423251BC986F704824CDD1E1326.torrent?title=The-Legend-of-Zelda--Skyward-Sword-HD'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'The Legend of Zelda - Skyward Sword HD',
+ 'url': 'https://www.limetorrents.pro/The-Legend-of-Zelda--Skyward-Sword-HD-torrent-16382548.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/F57B6310150589C4BE5394BBC4D12EDF813028F0.torrent?title=Streets-of-Rage-4'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Streets of Rage 4',
+ 'url': 'https://www.limetorrents.pro/Streets-of-Rage-4-torrent-16385427.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/AD7F968D7F0E28CD401811EA37CDDD283D2491EB.torrent?title=NieR-Automata-Game-of-the-YoRHa-Edition'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'NieR Automata Game of the YoRHa Edition',
+ 'url': 'https://www.limetorrents.pro/NieR-Automata-Game-of-the-YoRHa-Edition-torrent-16382158.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/E6903E9BE1EC8676FE02FC4A438F537F6395EFA7.torrent?title=Old-Evil'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Old Evil',
+ 'url': 'https://www.limetorrents.pro/Old-Evil-torrent-16382070.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/4A99CEA5DE15048E42FC5B58240FCC93A8A888B5.torrent?title=Wonhon--A-Vengeful-Spirit'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Wonhon - A Vengeful Spirit',
+ 'url': 'https://www.limetorrents.pro/Wonhon--A-Vengeful-Spirit-torrent-16382332.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/564E90C70CAAA50C1D3E4FF1E6D866978C74B716.torrent?title=Coastline-Flight-Simulator'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Coastline Flight Simulator',
+ 'url': 'https://www.limetorrents.pro/Coastline-Flight-Simulator-torrent-16379618.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/927BB6F1F14F10FDE1A63B480B8B3EBB9E88DBE8.torrent?title=Streets-of-Rage-4-Mr-X-Nightmare'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Streets of Rage 4 Mr X Nightmare',
+ 'url': 'https://www.limetorrents.pro/Streets-of-Rage-4-Mr-X-Nightmare-torrent-16381692.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/4482E51B244ACEB5A37798648AA647D53A904B64.torrent?title=Horny-Housewives-Booty-Call-Blackmail-DARKSiDERS'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Horny Housewives Booty Call Blackmail-DARKSiDERS',
+ 'url': 'https://www.limetorrents.pro/Horny-Housewives-Booty-Call-Blackmail-DARKSiDERS-torrent-16387750.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/B7C892EAECD7E39B769DA7138E5DCE957ACF197C.torrent?title=100-Percent-Orange-Juice'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': '100 Percent Orange Juice',
+ 'url': 'https://www.limetorrents.pro/100-Percent-Orange-Juice-torrent-16390994.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/6B8228B00D32FBB33E89E9323A01DC85C13DD2ED.torrent?title=The-Immortal-Mayor'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'The Immortal Mayor',
+ 'url': 'https://www.limetorrents.pro/The-Immortal-Mayor-torrent-16382257.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/0BE85EB2339BB377EB5F58B69779904D6A63BEEE.torrent?title=Pax-Nova'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Pax Nova',
+ 'url': 'https://www.limetorrents.pro/Pax-Nova-torrent-16388434.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/F579CA11BFDC7AB7704F00D75F63E58D8A8C78A1.torrent?title=Sniper-Ghost-Warrior-2-v3-4-4-REPACK'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Sniper Ghost Warrior 2 v3 4 4 REPACK',
+ 'url': 'https://www.limetorrents.pro/Sniper-Ghost-Warrior-2-v3-4-4-REPACK-torrent-16384224.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/28DFEBB09AB4A93461700EFF2ABEE0799F76B656.torrent?title=Sniper-Ghost-Warrior-Gold-Edition-v1-2-REPACK'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Sniper Ghost Warrior Gold Edition v1 2 REPACK',
+ 'url': 'https://www.limetorrents.pro/Sniper-Ghost-Warrior-Gold-Edition-v1-2-REPACK-torrent-16379431.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/56E013AC8C1E436ED39A66348975582E93642DFF.torrent?title=NieR-Automata-GotYE-RePack-by-Chovka'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'NieR Automata GotYE RePack by Chovka',
+ 'url': 'https://www.limetorrents.pro/NieR-Automata-GotYE-RePack-by-Chovka-torrent-16390774.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Applications torrents',
+ 'url': 'https://www.limetorrents.pro/browse-torrents/Applications/'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Monthly TOP 100 torrents',
+ 'url': 'https://www.limetorrents.pro/cat_top/2/Applications/'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/rss/2/'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/9623A7CB1198538B94003B426B78FB7B29007BD8.torrent?title=Windows-11-Insider-Preview-Build-22000-51-(x64)-19-in-1-Incl-Activator- '
+        'CracksHash '}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Windows 11 Insider Preview Build 22000 51 (x64) 19 in 1 Incl '
+         'Activator {CracksH..',
+ 'url': 'https://www.limetorrents.pro/Windows-11-Insider-Preview-Build-22000-51-(x64)-19-in-1-Incl-Activator- '
+        'CracksHash -torrent-16379298.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/F9C892F4236D6439FE1FAEFA49C9C67C8FD6B0E4.torrent?title=Windows-11-Pro-Insider-Preview-21H2-Build-22000-51-Bypass-TPM-2-0-(TPM-2-0-Compliant)-(x64)-Pre-Activated- '
+        'CracksHash '}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Windows 11 Pro Insider Preview 21H2 Build 22000 51 Bypass TPM 2 0 '
+         '(TPM 2 0 Compl..',
+ 'url': 'https://www.limetorrents.pro/Windows-11-Pro-Insider-Preview-21H2-Build-22000-51-Bypass-TPM-2-0-(TPM-2-0-Compliant)-(x64)-Pre-Activated- '
+        'CracksHash -torrent-16381581.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/E1526252A7C754E99538F531AC059BD1280B311B.torrent?title=Microsoft-Office-2021-16-0-14131-20320'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Microsoft Office 2021 16 0 14131 20320',
+ 'url': 'https://www.limetorrents.pro/Microsoft-Office-2021-16-0-14131-20320-torrent-16383310.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/198B6B64846F482FE85A47E8071A4494995EB481.torrent?title=Windows-11-Pro-Preview-Build-22000-71-In-Pre-Non-TPM-2-0-Compliant-(x64)-Pre-Activated-July-2021'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Windows 11 Pro Preview Build 22000 71 In-Pre Non TPM 2 0 Compliant '
+         '(x64) Pre-Act..',
+ 'url': 'https://www.limetorrents.pro/Windows-11-Pro-Preview-Build-22000-71-In-Pre-Non-TPM-2-0-Compliant-(x64)-Pre-Activated-July-2021-torrent-16386569.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/5CA0E4BCF7F08E24F369CBC3B099296D743DB55C.torrent?title=PhotoScissors-v8-3-(x64)- '
+        '-Fix- CracksHash '}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'PhotoScissors v8 3 (x64) + Fix {CracksHash}',
+ 'url': 'https://www.limetorrents.pro/PhotoScissors-v8-3-(x64)- -Fix- '
+        'CracksHash -torrent-16389981.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/D8ADD792D65B3875E788267749E03819270416FA.torrent?title=31-Android-Apk-Pack-Modded-and-Paid-Android-Apps-02-07-2021- '
+        'CracksHash '}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': '31 Android Apk Pack Modded and Paid Android Apps 02 07 2021 '
+         '{CracksHash}',
+ 'url': 'https://www.limetorrents.pro/31-Android-Apk-Pack-Modded-and-Paid-Android-Apps-02-07-2021- '
+        'CracksHash -torrent-16382773.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/3957FC7AD6B48924D6D70BC704B46F61A4386B4B.torrent?title=4K-Video-Downloader-v4-16-5-4310-(x64)- '
+        '-Fix- CracksHash '}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': '4K Video Downloader v4 16 5 4310 (x64) + Fix {CracksHash}',
+ 'url': 'https://www.limetorrents.pro/4K-Video-Downloader-v4-16-5-4310-(x64)- '
+        '-Fix- CracksHash -torrent-16391096.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/1DA22E5EE97D61431CBD0104082FB010AE1F3A28.torrent?title=[FTUApps-com]--SoftPerfect-Switch-Port-Mapper-v3-1-3-Portable'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': '[FTUApps com] - SoftPerfect Switch Port Mapper v3 1 3 Portable',
+ 'url': 'https://www.limetorrents.pro/[FTUApps-com]--SoftPerfect-Switch-Port-Mapper-v3-1-3-Portable-torrent-16379476.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/583FF0AC5CE5F9C72904B2C1363FA84D74AF4C91.torrent?title=ToonMe--Cartoon-yourself-photo-editor-v0-6-2-Premium-Mod-Apk- '
+        'CracksHash '}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'ToonMe - Cartoon yourself photo editor v0 6 2 Premium Mod Apk '
+         '{CracksHash}',
+ 'url': 'https://www.limetorrents.pro/ToonMe--Cartoon-yourself-photo-editor-v0-6-2-Premium-Mod-Apk- '
+        'CracksHash -torrent-16391052.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/245B67AE9928C2FD0F9C496FBD5C4E4C8EF82E9E.torrent?title=Blackmagic-Design-DaVinci-Resolve-Studio-v17-2-2-0004- '
+        '-Fix- CracksHash '}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Blackmagic Design DaVinci Resolve Studio v17 2 2 0004 + Fix '
+         '{CracksHash}',
+ 'url': 'https://www.limetorrents.pro/Blackmagic-Design-DaVinci-Resolve-Studio-v17-2-2-0004- '
+        '-Fix- CracksHash -torrent-16391089.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/F5EE09EDC84F30D19040DDEB0AE018843845A388.torrent?title=TunePat-Inc-DisneyPlus-Video-Downloader-v1-00-F4CG'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'TunePat Inc DisneyPlus Video Downloader v1 00-F4CG',
+ 'url': 'https://www.limetorrents.pro/TunePat-Inc-DisneyPlus-Video-Downloader-v1-00-F4CG-torrent-16388011.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/90024AA1517B5868AB4552CD1DAE63A94CB8D93B.torrent?title=[FTUApps-com]--Movavi-Screen-Recorder-v21-4-Multilingual-Portable'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': '[FTUApps com] - Movavi Screen Recorder v21 4 Multilingual Portable',
+ 'url': 'https://www.limetorrents.pro/[FTUApps-com]--Movavi-Screen-Recorder-v21-4-Multilingual-Portable-torrent-16379481.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/DC4B178A9D9EF27A0DD3ACD2B8AF274DC86D1A08.torrent?title=Windows-10-21H1-16in1-MUL38-x64--Integral-Edition-2021-7-15--MD5 '
+        '-21D2DE5A00915E2D2B6BD7BBE53BA2A7'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Windows 10 21H1 16in1 MUL38 x64 - Integral Edition 2021 7 15 - MD5; '
+         '21D2DE5A0091..',
+ 'url': 'https://www.limetorrents.pro/Windows-10-21H1-16in1-MUL38-x64--Integral-Edition-2021-7-15--MD5 '
+        '-21D2DE5A00915E2D2B6BD7BBE53BA2A7-torrent-16387199.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/9E33E94218FA038F2E098F10E525BCAAA7D89A7A.torrent?title=Windows-10-21H1-16in1-en-US-x64--Integral-Edition-2021-7-15--MD5 '
+        '-EC6B9D1706BD51BA1964B8F80924DB45'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Windows 10 21H1 16in1 en-US x64 - Integral Edition 2021 7 15 - MD5; '
+         'EC6B9D1706BD..',
+ 'url': 'https://www.limetorrents.pro/Windows-10-21H1-16in1-en-US-x64--Integral-Edition-2021-7-15--MD5 '
+        '-EC6B9D1706BD51BA1964B8F80924DB45-torrent-16387201.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/1E3C8FBBF3AF8D66CBABE16BAA986A1D88B679B3.torrent?title=DVDFab-v12-0-3-8-(x64)- '
+        '-Fix- CracksHash '}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'DVDFab v12 0 3 8 (x64) + Fix {CracksHash}',
+ 'url': 'https://www.limetorrents.pro/DVDFab-v12-0-3-8-(x64)- -Fix- CracksHash '
+        '-torrent-16379261.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Anime torrents',
+ 'url': 'https://www.limetorrents.pro/browse-torrents/Anime/'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Monthly TOP 100 torrents',
+ 'url': 'https://www.limetorrents.pro/cat_top/1/Anime/'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/rss/1/'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/336876D215C353F68F097FD25CC4E493E40AA9F0.torrent?title=Boku-no-Hero-Academia--104-(1080p)-[DA51EF35]'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Boku no Hero Academia - 104 (1080p) [DA51EF35]',
+ 'url': 'https://www.limetorrents.pro/Boku-no-Hero-Academia--104-(1080p)-[DA51EF35]-torrent-16386817.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/B8456DDE7ECA32EA8EE5733AC3342A450C63E502.torrent?title=Genjitsu-Shugi-Yuusha-no-Oukoku-Saikenki--03-(1080p)-[FAC8395A]'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Genjitsu Shugi Yuusha no Oukoku Saikenki - 03 (1080p) [FAC8395A]',
+ 'url': 'https://www.limetorrents.pro/Genjitsu-Shugi-Yuusha-no-Oukoku-Saikenki--03-(1080p)-[FAC8395A]-torrent-16387883.html'}
+2021-07-19 05:24:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/DE5C60F669594E2EB1F2E253D14C0D8983E688C8.torrent?title=Tokyo-Revengers--15-(1080p)-[D103D4E1]'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Tokyo Revengers - 15 (1080p) [D103D4E1]',
+ 'url': 'https://www.limetorrents.pro/Tokyo-Revengers--15-(1080p)-[D103D4E1]-torrent-16388043.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/33E485E2486C74B9787BDE2527341D5B6F5A6E83.torrent?title=Bokutachi-no-Remake--03-(1080p)-[77851A59]'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Bokutachi no Remake - 03 (1080p) [77851A59]',
+ 'url': 'https://www.limetorrents.pro/Bokutachi-no-Remake--03-(1080p)-[77851A59]-torrent-16387443.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/7C6B2E443BC29EB4C4C0B721ED5D8B6EC439E924.torrent?title=Tantei-wa-Mou--Shindeiru--03-(1080p)-[A7518BB0]'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Tantei wa Mou, Shindeiru - 03 (1080p) [A7518BB0]',
+ 'url': 'https://www.limetorrents.pro/Tantei-wa-Mou--Shindeiru--03-(1080p)-[A7518BB0]-torrent-16390442.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/11E2609D0ED80AC764EACE3CBE59AAF729B0119E.torrent?title=Kobayashi-san-Chi-no-Maid-Dragon-S2--02-(1080p)-[68E52A39]'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Kobayashi-san Chi no Maid Dragon S2 - 02 (1080p) [68E52A39]',
+ 'url': 'https://www.limetorrents.pro/Kobayashi-san-Chi-no-Maid-Dragon-S2--02-(1080p)-[68E52A39]-torrent-16378957.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/AE8E7AED390E6CF1DDFEC76307CC58DB11360F31.torrent?title=Genjitsu-Shugi-Yuusha-no-Oukoku-Saikenki--03-(720p)-[AE96F69A]'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Genjitsu Shugi Yuusha no Oukoku Saikenki - 03 (720p) [AE96F69A]',
+ 'url': 'https://www.limetorrents.pro/Genjitsu-Shugi-Yuusha-no-Oukoku-Saikenki--03-(720p)-[AE96F69A]-torrent-16387878.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/40BD72F630F19FBA5E105151DA46B1D3D106227B.torrent?title=Boruto--Naruto-Next-Generations--208-(1080p)-[5325368F]'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Boruto - Naruto Next Generations - 208 (1080p) [5325368F]',
+ 'url': 'https://www.limetorrents.pro/Boruto--Naruto-Next-Generations--208-(1080p)-[5325368F]-torrent-16389678.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/E179FA108E5AC3B5E503B04354B8B8F5B879BA65.torrent?title=Mahouka-Koukou-no-Yuutousei--03-(1080p)-[CB695718]'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Mahouka Koukou no Yuutousei - 03 (1080p) [CB695718]',
+ 'url': 'https://www.limetorrents.pro/Mahouka-Koukou-no-Yuutousei--03-(1080p)-[CB695718]-torrent-16387627.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/49464828BE869C2AE91EDB780457A44982E63C2B.torrent?title=Boku-no-Hero-Academia--104-(720p)-[DD41C060]'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Boku no Hero Academia - 104 (720p) [DD41C060]',
+ 'url': 'https://www.limetorrents.pro/Boku-no-Hero-Academia--104-(720p)-[DD41C060]-torrent-16386823.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/025B24FD7FD3564D7D38BC7C88BCC01B5514C80B.torrent?title=Mairimashita '
+        '-Iruma-kun-S2--14-(1080p)-[C6AF08C2]'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Mairimashita! Iruma-kun S2 - 14 (1080p) [C6AF08C2]',
+ 'url': 'https://www.limetorrents.pro/Mairimashita '
+        '-Iruma-kun-S2--14-(1080p)-[C6AF08C2]-torrent-16387010.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/253DACE260BD4001ABE45B1C6599074CE7CCBF5F.torrent?title=Shinigami-Bocchan-to-Kuro-Maid--03-(1080p)-[2D40434D]'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Shinigami Bocchan to Kuro Maid - 03 (1080p) [2D40434D]',
+ 'url': 'https://www.limetorrents.pro/Shinigami-Bocchan-to-Kuro-Maid--03-(1080p)-[2D40434D]-torrent-16390435.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/F90FA7B08E3CAB30EAB242FF3561AB5548671D96.torrent?title=One-Piece--983-(1080p)-[70F10A94]'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'One Piece - 983 (1080p) [70F10A94]',
+ 'url': 'https://www.limetorrents.pro/One-Piece--983-(1080p)-[70F10A94]-torrent-16388675.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/AC41A63A49A0F407D985F513D8AF14E3AFF7DD05.torrent?title=Tsuki-ga-Michibiku-Isekai-Douchuu--02-(1080p)-[64D332B9]'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Tsuki ga Michibiku Isekai Douchuu - 02 (1080p) [64D332B9]',
+ 'url': 'https://www.limetorrents.pro/Tsuki-ga-Michibiku-Isekai-Douchuu--02-(1080p)-[64D332B9]-torrent-16378830.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/C3B14DC3EAA348E6BCA9CC617BAB580F0C0F8EC7.torrent?title=Sonny-Boy--01-(1080p)-[DF33FC90]'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Sonny Boy - 01 (1080p) [DF33FC90]',
+ 'url': 'https://www.limetorrents.pro/Sonny-Boy--01-(1080p)-[DF33FC90]-torrent-16381808.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Other torrents',
+ 'url': 'https://www.limetorrents.pro/browse-torrents/Other/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Monthly TOP 100 torrents',
+ 'url': 'https://www.limetorrents.pro/cat_top/21/Other/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/rss/21/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/496B970B11B63CF568E1E8C6A5B2DE3863EC730A.torrent?title=CAWD-243'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'CAWD-243',
+ 'url': 'https://www.limetorrents.pro/CAWD-243-torrent-16385842.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/E7D251715D0A8EA4D6725CCBBED7A9B84C23A537.torrent?title=SSIS-163'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'SSIS-163',
+ 'url': 'https://www.limetorrents.pro/SSIS-163-torrent-16385681.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/1E7050CA850A2052FBCE3053352569F4A2E1687F.torrent?title=FC2-PPV-1881246'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'FC2-PPV-1881246',
+ 'url': 'https://www.limetorrents.pro/FC2-PPV-1881246-torrent-16381160.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/53233EDC8A01560406B55BBF7654330928B3711F.torrent?title=CAWD-250'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'CAWD-250',
+ 'url': 'https://www.limetorrents.pro/CAWD-250-torrent-16385850.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/F4AA00DC02755A65B15FC4A5085E73C4341CEC9C.torrent?title=HMN-012'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'HMN-012',
+ 'url': 'https://www.limetorrents.pro/HMN-012-torrent-16385698.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/463E5DE1C816F6878C2D2497A72A298E31474DC2.torrent?title=SSIS-162'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'SSIS-162',
+ 'url': 'https://www.limetorrents.pro/SSIS-162-torrent-16385684.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/65CB85AC2B8C40D0B19B1E441F9D6A5D109573CE.torrent?title=HMN-014'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'HMN-014',
+ 'url': 'https://www.limetorrents.pro/HMN-014-torrent-16385686.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/2FB8BAE516987A8D360D323D7F99CDAB4A8B2CDE.torrent?title=CAWD-258'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'CAWD-258',
+ 'url': 'https://www.limetorrents.pro/CAWD-258-torrent-16385829.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/3A3861DBBD7F82E8D8CAB32A116A54DA44FA2EF6.torrent?title=CAWD-257'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'CAWD-257',
+ 'url': 'https://www.limetorrents.pro/CAWD-257-torrent-16385841.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/BC346E55CB28F6608BA8329F68F66E8994CF32BC.torrent?title=IPX-367-uncensored'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'IPX-367 uncensored',
+ 'url': 'https://www.limetorrents.pro/IPX-367-uncensored-torrent-16382881.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/5DC0B87E71718BDE7EF5D4525F07D1E715D76698.torrent?title=IPX-628-uncensored'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'IPX-628 uncensored',
+ 'url': 'https://www.limetorrents.pro/IPX-628-uncensored-torrent-16386021.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/5EF95EF3B131460A5EAAF40DCBC0E68B33739A8D.torrent?title=CAWD-251'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'CAWD-251',
+ 'url': 'https://www.limetorrents.pro/CAWD-251-torrent-16385823.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/DD4B049868247EB7D2CBFD113DC33FA1CDB7FA1D.torrent?title=CAWD-163-uncensored'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'CAWD-163 uncensored',
+ 'url': 'https://www.limetorrents.pro/CAWD-163-uncensored-torrent-16382879.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/01388D266A79E80728ABBA1E3E05EA703BF4EB44.torrent?title=[MiMiA-Cute]-ふたサキュ・ラルクのダダ漏れ-夢精ライブ-ベッドで会おっか♪'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': '[MiMiA Cute] ふたサキュ・ラルクのダダ漏れ 夢精ライブ ベッ�..',
+ 'url': 'https://www.limetorrents.pro/[MiMiA-Cute]-ふたサキュ・ラルクのダダ漏れ-夢精ライブ-ベッドで会おっか♪-torrent-16382100.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'http://itorrents.org/torrent/EB4F292FCDC6708426732AD9FC94060F41839843.torrent?title=IPZ-941-uncensored'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'IPZ-941 uncensored',
+ 'url': 'https://www.limetorrents.pro/IPZ-941-uncensored-torrent-16386032.html'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Movies',
+ 'url': 'https://www.limetorrents.pro/browse-torrents/Movies/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'TOP', 'url': 'https://www.limetorrents.pro/cat_top/16/Movies/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/rss/16/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'TV shows',
+ 'url': 'https://www.limetorrents.pro/browse-torrents/TV-shows/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'TOP', 'url': 'https://www.limetorrents.pro/cat_top/20/TV-shows/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/rss/20/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Music', 'url': 'https://www.limetorrents.pro/browse-torrents/Music/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'TOP', 'url': 'https://www.limetorrents.pro/cat_top/17/Music/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/rss/17/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Games', 'url': 'https://www.limetorrents.pro/browse-torrents/Games/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'TOP', 'url': 'https://www.limetorrents.pro/cat_top/8/Games/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/rss/8/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Applications',
+ 'url': 'https://www.limetorrents.pro/browse-torrents/Applications/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'TOP', 'url': 'https://www.limetorrents.pro/cat_top/2/Applications/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/rss/2/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Anime', 'url': 'https://www.limetorrents.pro/browse-torrents/Anime/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'TOP', 'url': 'https://www.limetorrents.pro/cat_top/1/Anime/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/rss/1/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Other', 'url': 'https://www.limetorrents.pro/browse-torrents/Other/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'TOP', 'url': 'https://www.limetorrents.pro/cat_top/21/Other/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.pro/rss/21/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Torrent Downloads', 'url': 'https://www.torrentdownloads.me/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Torrents.me', 'url': 'https://torrents.me/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Torrent Download', 'url': 'https://www.torrentdownload.info/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': '1337x', 'url': 'https://1337x.to/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'How To Download', 'url': 'https://www.howtodownload.cc/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'url': 'https://www.limetorrents.online'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Loki S01E01 Episode 2',
+ 'url': 'https://www.limetorrents.pro/search/all/Loki-S01E01-Episode-2/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Gladiador',
+ 'url': 'https://www.limetorrents.pro/search/all/Gladiador/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'let go eevee',
+ 'url': 'https://www.limetorrents.pro/search/all/let-go-eevee/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'MeanBitches Abella Danger',
+ 'url': 'https://www.limetorrents.pro/search/all/MeanBitches-Abella-Danger/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'the 100 x265 s06',
+ 'url': 'https://www.limetorrents.pro/search/all/the-100-x265-s06/'}
+2021-07-19 05:24:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Introduction cartoon',
+ 'url': 'https://www.limetorrents.pro/search/all/Introduction-cartoon/'}
+2021-07-19 05:24:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'The Flash E',
+ 'url': 'https://www.limetorrents.pro/search/all/The-Flash-E/'}
+2021-07-19 05:24:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'visit xxx',
+ 'url': 'https://www.limetorrents.pro/search/all/visit-xxx/'}
+2021-07-19 05:24:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Viena and the Fantomes 2020 720p AMZN WEBRip DDP5 1 x264',
+ 'url': 'https://www.limetorrents.pro/search/all/Viena-and-the-Fantomes-2020-720p-AMZN-WEBRip-DDP5-1-x264/'}
+2021-07-19 05:24:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Advance and Retreat 2016',
+ 'url': 'https://www.limetorrents.pro/search/all/Advance-and-Retreat-2016/'}
+2021-07-19 05:24:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'TechPocket', 'url': 'https://www.techpocket.org'}
+2021-07-19 05:24:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Techolac', 'url': 'https://www.techolac.com'}
+2021-07-19 05:24:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Solu', 'url': 'https://www.solu.co'}
+2021-07-19 05:24:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'Privacy', 'url': 'https://www.limetorrents.pro/privacy/'}
+2021-07-19 05:24:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'DMCA', 'url': 'https://www.limetorrents.pro/dmca/'}
+2021-07-19 05:24:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.limetorrents.pro/home/>
+{'text': 'RSS Feed', 'url': 'https://www.limetorrents.pro/rss/'}
+2021-07-19 05:24:21 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-07-19 05:24:21 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 455,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 15396,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 12.344215,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 7, 19, 5, 24, 21, 114936),
+ 'httpcompression/response_bytes': 72444,
+ 'httpcompression/response_count': 2,
+ 'item_scraped_count': 293,
+ 'log_count/DEBUG': 296,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 2,
+ 'memusage/max': 77606912,
+ 'memusage/startup': 77606912,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 7, 19, 5, 24, 8, 770721)}
+2021-07-19 05:24:21 [scrapy.core.engine] INFO: Spider closed (finished)

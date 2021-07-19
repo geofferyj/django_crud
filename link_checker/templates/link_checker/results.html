@@ -1,0 +1,43 @@
+
+{% extends 'base.html' %}
+{% block content %}
+
+    {% if items %}
+
+        {% for item in items %}
+            
+            {% if item %}
+            
+                <article class="post infinite-item">
+                    <div class="inner">
+                        <header class="post-header">
+                            <h2 class="post-title">{{ item.text }}</h2>
+                        </header>
+
+                        <section class="post-excerpt">
+                            <p>{{ item.url}}</p>
+                        </section>
+                    </div>
+                </article>
+
+            {% endif %}
+
+        {% endfor %} 
+
+    {% else %}
+
+        <article class="post infinite-item">
+            <div class="inner">
+                <header class="post-header">
+                    <h2 class="post-title">No results yet</h2>
+                </header>
+
+                <section class="post-excerpt">
+                    <p>Please refresh page to see results</p>
+                </section>
+            </div>
+        </article>
+
+    {% endif %}
+
+{% endblock content %}

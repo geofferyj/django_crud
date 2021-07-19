@@ -6,6 +6,10 @@ name = "pypi"
 [packages]
 django = "*"
 psycopg2 = "*"
+scrapy-djangoitem = "*"
+scrapy = "*"
+scrapyd = "*"
+python-scrapyd-api = "*"
 
 [dev-packages]
 
