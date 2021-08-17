@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('crud_app.urls')),
     path('link_checker/', include('link_checker.urls')),
+    path('spellchecker/', include('spellchecker.urls')),
 ]
