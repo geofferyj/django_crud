@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crud_app',
     'link_checker', # <-- Added this line
+    'spellchecker',
 ]
 
 MIDDLEWARE = [
