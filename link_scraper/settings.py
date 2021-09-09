@@ -62,6 +62,7 @@ ROBOTSTXT_OBEY = True
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'link_scraper.pipelines.LinkScraperPipeline': 300,
+   'link_scraper.pipelines.SpellCheckerPipeline': 300, # Todo - talk about this item pipeline
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
