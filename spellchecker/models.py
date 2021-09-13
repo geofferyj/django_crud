@@ -28,16 +28,6 @@ class MatchedError(models.Model):
 
     serializeable = ErrorManager()
 
-    
-    def to_dict(self):
-        return {
-            "message": self.message,
-            "error_term": self.error_term,
-            "possibleCorrections": self.possibleCorrections,
-            "error_sentence": self.error_sentence,
-            "error_line_number": self.error_line_number,
-        }
-
 
     def __str__(self):
         return str(self.job_id)

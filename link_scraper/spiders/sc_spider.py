@@ -1,6 +1,6 @@
 from link_scraper.items import MatchedErrorItem
 import scrapy
-from bs4 import BeautifulSoup as BS # We'll use this to extract the text from the html
+from bs4 import BeautifulSoup as BS
 from language_tool_python import LanguageTool as LT
 from scrapy.http.response.text import TextResponse
 
@@ -11,8 +11,8 @@ class SpellCheckerSpider(scrapy.Spider):
     def __init__(self, *args, **kwargs):
         self.url = kwargs.get('url')
         self.language = kwargs.get('language', "en-us")
-        self.language_tool = LT(self.language)
         self.job_id = kwargs.get('job_id')
+        self.language_tool = LT(self.language)
     
 
     def start_requests(self):
@@ -23,7 +23,7 @@ class SpellCheckerSpider(scrapy.Spider):
         
         lines = response.text.split('\n')
         for line_number, line in enumerate(lines):
-            text = BS(line, 'html.parser').get_text() 
+            text = BS(line).get_text() 
             matches = self.language_tool.check(text)
 
             for match in matches:
